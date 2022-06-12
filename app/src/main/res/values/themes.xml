@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Widget.Neumorph.Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
+        <item name="android:minHeight">72dip</item>
+        <item name="android:minWidth">112dip</item>
+        <item name="android:paddingLeft">@dimen/design_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/design_btn_padding_right</item>
+        <item name="android:paddingTop">@dimen/design_btn_padding_top</item>
+        <item name="android:paddingBottom">@dimen/design_btn_padding_bottom</item>
+        <item name="android:stateListAnimator">@animator/button_state_list_anim_neumorph</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="neumorph_inset">@dimen/design_default_inset</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">?colorShadowLight</item>
+        <item name="neumorph_shadowColorDark">?colorShadowDark</item>
+        <item name="neumorph_shapeType">flat</item>
+        <item name="neumorph_shapeAppearance">@style/ShapeAppearance.Neumorph.Button</item>
+    </style>
+
+    <style name="Widget.Neumorph.CardView.back" parent="android:Widget">
+        <item name="android:padding">@dimen/design_default_padding</item>
+        <item name="android:stateListAnimator">@animator/button_state_list_anim_neumorph</item>
+        <item name="neumorph_inset">@dimen/design_default_inset</item>
+        <item name="neumorph_shapeType">flat</item>
+        <item name="neumorph_shapeAppearance">@style/ShapeAppearance.Neumorph.CardView.back</item>
+    </style>
+
+    <style name="ShapeAppearance.Neumorph.CardView.back" parent="">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">12dp</item>
+    </style>
+
+</resources>
